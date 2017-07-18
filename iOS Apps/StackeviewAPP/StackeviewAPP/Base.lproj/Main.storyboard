@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StackeviewAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vsd-6c-hcT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="105"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="95m-5a-fr9"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CzM-jb-1Lq">
+                                <rect key="frame" x="20" y="125" width="374" height="591"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w8h-Aq-P7Z">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="236"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chucks" translatesAutoresizingMaskIntoConstraints="NO" id="Y9U-6u-Qbo">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="236"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="wdd-3o-mfm">
+                                        <rect key="frame" x="0.0" y="246" width="374" height="50"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shoes1" translatesAutoresizingMaskIntoConstraints="NO" id="l1D-uR-Vpo">
+                                                <rect key="frame" x="0.0" y="0.0" width="54.666666666666671" height="50"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shoes2" translatesAutoresizingMaskIntoConstraints="NO" id="aBr-WY-jGP">
+                                                <rect key="frame" x="79.666666666666657" y="0.0" width="54.999999999999972" height="50"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shoes3" translatesAutoresizingMaskIntoConstraints="NO" id="pGD-cu-Ouk">
+                                                <rect key="frame" x="159.66666666666666" y="0.0" width="54.666666666666686" height="50"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shoes4" translatesAutoresizingMaskIntoConstraints="NO" id="n2Q-Od-ucn">
+                                                <rect key="frame" x="239.33333333333331" y="0.0" width="55" height="50"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shoes5" translatesAutoresizingMaskIntoConstraints="NO" id="znj-10-L8q">
+                                                <rect key="frame" x="319.33333333333326" y="0.0" width="54.666666666666686" height="50"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qhe-lX-2M5">
+                                        <rect key="frame" x="0.0" y="306" width="374" height="28.666666666666686"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chuck Taylor Shoes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GwC-Qf-rNU">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="28.666666666666686"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="35Q-O5-0ZM">
+                                        <rect key="frame" x="0.0" y="344.66666666666674" width="374" height="27.333333333333314"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ref : 12312445T USA SPECIAL EDITION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xih-bd-SOP">
+                                                <rect key="frame" x="0.0" y="0.0" width="313" height="27.333333333333314"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$78.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igM-jJ-uHC">
+                                                <rect key="frame" x="313" y="0.0" width="61" height="27.333333333333314"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                                <color key="textColor" red="0.00069203204119999999" green="0.554242228" blue="0.001073648866" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="2M9-gf-Zu5">
+                                        <rect key="frame" x="0.0" y="382" width="374" height="209"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEm-Q0-TyB">
+                                                <rect key="frame" x="0.0" y="0.0" width="162" height="209"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
+                                                <state key="normal" title="LIKE"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNH-iI-8WO">
+                                                <rect key="frame" x="212" y="0.0" width="162" height="209"/>
+                                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
+                                                <state key="normal" title="BUY"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="CzM-jb-1Lq" secondAttribute="trailing" constant="20" id="22L-20-jfY"/>
+                            <constraint firstItem="CzM-jb-1Lq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="6JJ-8e-yzh"/>
+                            <constraint firstItem="CzM-jb-1Lq" firstAttribute="top" secondItem="Vsd-6c-hcT" secondAttribute="bottom" constant="20" id="CY3-3W-Cg4"/>
+                            <constraint firstItem="Vsd-6c-hcT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="LMR-aQ-c0e"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CzM-jb-1Lq" secondAttribute="bottom" constant="20" id="Pzn-iM-jF6"/>
+                            <constraint firstItem="Vsd-6c-hcT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pch-lZ-qCM"/>
+                            <constraint firstAttribute="trailing" secondItem="Vsd-6c-hcT" secondAttribute="trailing" id="xy1-s3-STO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.1875" y="122.46093749999999"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chucks" width="320" height="236"/>
+        <image name="shoes1" width="50" height="50"/>
+        <image name="shoes2" width="50" height="50"/>
+        <image name="shoes3" width="50" height="50"/>
+        <image name="shoes4" width="50" height="50"/>
+        <image name="shoes5" width="50" height="50"/>
+    </resources>
+</document>
