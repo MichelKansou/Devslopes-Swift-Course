@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MVCTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJj-en-aFp">
+                                <rect key="frame" x="16" y="40" width="288" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="eAx-Z8-wko"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="steve" translatesAutoresizingMaskIntoConstraints="NO" id="JGP-wN-PQb" customClass="RoundedImageView" customModule="MVCTest" customModuleProvider="target">
+                                <rect key="frame" x="61" y="183" width="199" height="202"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="199" id="JvO-Se-ydg"/>
+                                    <constraint firstAttribute="height" constant="202" id="dch-sK-R9y"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your FirstName..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WsQ-GR-9cv">
+                                <rect key="frame" x="61" y="131" width="199" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ypI-yv-ZlU"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrm-2G-hKO">
+                                <rect key="frame" x="89" y="420" width="142" height="48"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="cRW-wq-878"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Rename">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="renamePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jzs-r6-kVh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nrm-2G-hKO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="73" id="CQM-Z3-l71"/>
+                            <constraint firstItem="wJj-en-aFp" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="HUj-fE-Vy3"/>
+                            <constraint firstItem="wJj-en-aFp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="HdY-GP-6cS"/>
+                            <constraint firstItem="wJj-en-aFp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oki-Rx-vXr"/>
+                            <constraint firstItem="JGP-wN-PQb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TLo-CU-oKM"/>
+                            <constraint firstItem="JGP-wN-PQb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Un7-N7-pb2"/>
+                            <constraint firstItem="wJj-en-aFp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="W1L-Fj-Ybe"/>
+                            <constraint firstItem="JGP-wN-PQb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yzr-EB-Vhq"/>
+                            <constraint firstItem="WsQ-GR-9cv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="45" id="aNE-uK-rL6"/>
+                            <constraint firstItem="nrm-2G-hKO" firstAttribute="top" secondItem="JGP-wN-PQb" secondAttribute="bottom" constant="35" id="cRe-TR-1pa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WsQ-GR-9cv" secondAttribute="trailing" constant="44" id="eFC-lw-K8X"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nrm-2G-hKO" secondAttribute="trailing" constant="73" id="nTx-BS-bF7"/>
+                            <constraint firstItem="WsQ-GR-9cv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nt3-mB-EI5"/>
+                            <constraint firstItem="nrm-2G-hKO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t5E-JI-fZo"/>
+                            <constraint firstItem="JGP-wN-PQb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wfL-Oe-HgC"/>
+                            <constraint firstItem="WsQ-GR-9cv" firstAttribute="top" secondItem="wJj-en-aFp" secondAttribute="bottom" constant="21" id="yTa-hr-URM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fullName" destination="wJj-en-aFp" id="MXq-9m-5cW"/>
+                        <outlet property="renameField" destination="WsQ-GR-9cv" id="IQU-1G-8US"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.25" y="122.53521126760563"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="steve" width="706" height="644"/>
+    </resources>
+</document>
