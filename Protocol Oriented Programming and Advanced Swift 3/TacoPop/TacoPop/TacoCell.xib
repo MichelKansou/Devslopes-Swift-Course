@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TacoCell" id="gTV-IL-0wX" customClass="TacoCell" customModule="TacoPop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="190" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="190" height="145"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brisket Taco" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="FYm-nN-5Ew">
+                        <rect key="frame" x="0.0" y="95" width="190" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="CcK-pa-YxC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brisket" translatesAutoresizingMaskIntoConstraints="NO" id="6X0-y2-bDa">
+                        <rect key="frame" x="0.0" y="0.0" width="190" height="90"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="FYm-nN-5Ew" secondAttribute="trailing" id="7XN-IW-P6D"/>
+                <constraint firstItem="FYm-nN-5Ew" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8JO-NJ-nfl"/>
+                <constraint firstItem="6X0-y2-bDa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="EWl-7y-WdB"/>
+                <constraint firstItem="6X0-y2-bDa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="FIg-1c-f2c"/>
+                <constraint firstAttribute="trailing" secondItem="6X0-y2-bDa" secondAttribute="trailing" id="XLt-cC-cxv"/>
+                <constraint firstAttribute="bottom" secondItem="FYm-nN-5Ew" secondAttribute="bottom" constant="5" id="sdi-37-EQz"/>
+                <constraint firstItem="FYm-nN-5Ew" firstAttribute="top" secondItem="6X0-y2-bDa" secondAttribute="bottom" constant="5" id="xJO-0C-Lt1"/>
+            </constraints>
+            <size key="customSize" width="190" height="145"/>
+            <connections>
+                <outlet property="tacoImage" destination="6X0-y2-bDa" id="afO-ew-XCT"/>
+                <outlet property="tacoLabel" destination="FYm-nN-5Ew" id="qUm-E4-Tks"/>
+            </connections>
+            <point key="canvasLocation" x="166" y="135.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Brisket" width="1024" height="678"/>
+    </resources>
+</document>
