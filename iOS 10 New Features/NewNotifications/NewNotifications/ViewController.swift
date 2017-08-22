@@ -52,8 +52,8 @@ class ViewController: UIViewController {
         
         let notif = UNMutableNotificationContent()
         
-        // ONLY FOR EXTENSION
-        notif.categoryIdentifier = "myNotificationCategory"
+//        // ONLY FOR EXTENSION
+//        notif.categoryIdentifier = "myNotificationCategory"
         
         notif.title = "New Notification"
         notif.subtitle = "These are great!"
